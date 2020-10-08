@@ -6,6 +6,6 @@ export class ApiResponse<TReturn, TContext = undefined, TResponse = undefined> {
     ) {}
 
     public value(): Promise<TReturn> {
-        return this.transform(this.raw);
+        return this.transform(this.raw, this.context);
     }
 }
