@@ -1,6 +1,6 @@
 {
   "name": "ts-api-client-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generates type-aware REST API client from config written with Typescript",
   "repository": {
     "type": "git",
