@@ -34,7 +34,8 @@ export function getQueryParametersString(
                 return getQueryParametersString(value, fullKey);
             }
 
-            return `${encodedKey}=${encodeValue(value)}`;
+            // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+            return `${encodedKey}=${encodeValue(value as JsonValuePrimitive)}`;
         })
         .filter((part) => part.length > 0)
         .join('&');
