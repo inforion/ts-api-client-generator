@@ -81,6 +81,7 @@ export default function generateClient<
     return mapValues(
         clientConfig.endpoints,
         (name, endpoint) => (
+            /* @ts-ignore (mutes possible TS2589 error occurred on user side) */
             generateEndpointClient(endpoint, name, clientConfig.basePath, clientConfig)
         )
     );
