@@ -104,6 +104,7 @@ await client.appData.users.put({
     // * queryParams?: Record<string, string>
     // * additionalHeaders?: Record<string, string>
     // * transformResponse?: (response: Response, context?: TContext) => Promise<TReturn>
+    // * requestOptions?: any // can be used to pass any adapter-specific request options, e. g. abort signal for fetch adapter
     //
     // transformResponse for all endpoints can also be specified in adapter config
 })
