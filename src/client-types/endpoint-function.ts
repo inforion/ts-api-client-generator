@@ -12,7 +12,8 @@ export interface EndpointFunctionArgument_<TBody, TParams, TReturn, TContext = u
     queryParams?: Record<string, string>,
 
     additionalHeaders?: Record<string, string>,
-    transformResponse?: (response: Response, context?: TContext) => Promise<TReturn>
+    transformResponse?: (response: Response, context?: TContext) => Promise<TReturn>,
+    requestOptions?: any
 }
 
 export type EndpointFunctionArgument<TMethod extends AnyMethodConfig> =
