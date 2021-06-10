@@ -15,7 +15,7 @@ type TransformFunction<TObject extends AnyObject, TNewValue> =
 
 type TransformedObject<TObject extends AnyObject, TNewValue> = {
     [K in keyof TObject]: TNewValue;
-}
+};
 
 export function mapValues<TObject extends AnyObject, TNewValue>(
     object: TObject,
