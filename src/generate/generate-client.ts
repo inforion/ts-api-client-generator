@@ -13,7 +13,7 @@ import {
     AnyEndpointConfig,
     AnyEndpointsGroupConfig,
     AnyMethodConfig
-} from '../config-parts/endpoints';
+} from '../config-parts';
 import {
     combinePaths,
     mapValues

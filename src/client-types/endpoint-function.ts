@@ -3,17 +3,17 @@ import {
     EndpointConfigContextType,
     EndpointReturnType,
     MethodConfig
-} from '../config-parts/endpoints';
+} from '../config-parts';
 import { ApiResponse } from '../request';
 
 export interface EndpointFunctionArgument_<TBody, TParams, TReturn, TContext = undefined> {
-    body?: TBody,
-    endpointParams?: TParams,
-    queryParams?: Record<string, string>,
+    body?: TBody;
+    endpointParams?: TParams;
+    queryParams?: Record<string, string>;
 
-    additionalHeaders?: Record<string, string>,
-    transformResponse?: (response: Response, context?: TContext) => Promise<TReturn>,
-    requestOptions?: any
+    additionalHeaders?: Record<string, string>;
+    transformResponse?: (response: Response, context?: TContext) => Promise<TReturn>;
+    requestOptions?: any;
 }
 
 export type EndpointFunctionArgument<TMethod extends AnyMethodConfig> =

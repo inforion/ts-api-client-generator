@@ -1,17 +1,19 @@
 import { AnyMethodsConfig } from './methods-config';
 
 export interface EndpointConfig<
+    // eslint-disable-next-line no-use-before-define -- circular-reference
     TEndpoints extends AnyEndpointsGroupConfig,
     TMethods extends AnyMethodsConfig
 > {
-    name?: string,
+    name?: string;
 
-    children?: TEndpoints,
+    children?: TEndpoints;
 
-    methods?: TMethods
+    methods?: TMethods;
 }
 
 export type AnyEndpointConfig =
+    // eslint-disable-next-line no-use-before-define -- circular-reference
     EndpointConfig<AnyEndpointsGroupConfig, AnyMethodsConfig>;
 
 export type AnyEndpointsGroupConfig =

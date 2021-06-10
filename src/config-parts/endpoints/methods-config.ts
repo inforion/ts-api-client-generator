@@ -10,11 +10,11 @@ export class MethodConfig<TBody = undefined, TParams = undefined, TReturn = void
         readonly method: HttpMethod,
         readonly endpoint: string | ((params: TParams) => string),
         readonly context?: TContext
-    ) { }
+    ) {}
 }
 
 export class MethodConfigNoBody<TParams = undefined, TReturn = void, TContext = undefined>
-    extends MethodConfig<undefined, TParams, TReturn, TContext> { }
+    extends MethodConfig<undefined, TParams, TReturn, TContext> {}
 
 export type AnyMethodConfig = MethodConfig<any, any, any, any>;
 

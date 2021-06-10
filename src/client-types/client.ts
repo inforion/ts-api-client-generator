@@ -1,4 +1,4 @@
-import { AnyEndpointsGroupConfig } from '../config-parts/endpoints';
+import { AnyEndpointsGroupConfig } from '../config-parts';
 import { EndpointsGroup } from './endpoints-group';
 
 export type Client<TEndpoints extends AnyEndpointsGroupConfig, TResponse> = {
