@@ -64,7 +64,9 @@ module.exports = {
                 '@typescript-eslint/no-empty-function': 'error',
                 '@typescript-eslint/no-useless-constructor': 'error',
                 '@typescript-eslint/no-explicit-any': 'off',
+                '@typescript-eslint/no-shadow': 'error',
                 '@typescript-eslint/semi': 'error',
+                'no-shadow': 'off', // in favor of @typescript-eslint/no-shadow
                 semi: 'off', // in favor of @typescript-eslint/semi
                 'unicorn/prevent-abbreviations': [
                     'error', {
