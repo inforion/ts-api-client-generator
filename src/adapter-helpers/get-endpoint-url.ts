@@ -18,7 +18,7 @@ export function getEndpointUrl<TParams>(
 
     const fullPath = combinePaths(path, name);
 
-    return queryParameters != null && Object.keys(queryParameters).length !== 0
+    return queryParameters != null && Object.keys(queryParameters).length > 0
         ? `${fullPath}?${getQueryParametersString(queryParameters)}`
         : fullPath;
 }
